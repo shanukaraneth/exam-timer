@@ -79,6 +79,12 @@
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col relative selection:bg-imate-lightblue selection:text-white">
 
+    <script>
+        if (sessionStorage.getItem("imateLoggedIn") !== "true") {
+            window.location.href = "index.html";
+        }
+    </script>
+
     <!-- Global App Container -->
     <div id="app" class="flex-grow flex flex-col w-full h-full relative"></div>
 

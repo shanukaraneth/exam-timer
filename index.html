@@ -204,6 +204,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         enteredUsername === USERNAME &&
         enteredPassword === PASSWORD
     ){
+        sessionStorage.setItem("imateLoggedIn", "true");
         window.location.href = REDIRECT_URL;
     }
     else{
